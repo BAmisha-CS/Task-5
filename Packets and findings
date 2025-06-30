@@ -1,0 +1,11 @@
+Findings and Packet Details
+During the capture session, I observed multiple key protocols involved in network communication:
+
+HTTP: Captured unencrypted web traffic showing client requests and server responses.
+TCP: The primary transport protocol for reliable data delivery, underlying HTTP and other sessions.
+UDP: Used for lightweight communication, including DNS queries and QUIC packets.
+QUIC: A modern, UDP-based transport protocol used by HTTP/3, visible on UDP port 443.
+DNS: Protocol responsible for translating domain names to IP addresses, essential for browsing.
+
+The capture file contains detailed packet information such as source/destination IPs, ports, packet lengths, and timestamps.
+Filtering by protocols in Wireshark enabled clear identification and analysis of each communication type, providing insight into how data travels across the network.
